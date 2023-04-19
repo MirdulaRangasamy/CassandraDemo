@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.exterro</groupId>
+  <artifactId>CassandraDemo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>CassandraDemo</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+<!--	<dependency>
+    	<groupId>io.stargate.grpc</groupId>
+    	<artifactId>grpc-proto</artifactId>
+    	<version>1.0.41</version>
+  	</dependency>
+  	<dependency>
+    	<groupId>io.grpc</groupId>
+    	<artifactId>grpc-netty-shaded</artifactId>
+    	<version>1.41.0</version>
+  	</dependency>-->
+  	<!--If using Maven, add the following dependencies to your pom.xml file-->
+<!--Use the latest version from https://search.maven.org/artifact/com.datastax.oss/java-driver-core -->
+<dependency>
+  <groupId>com.datastax.oss</groupId>
+  <artifactId>java-driver-core</artifactId>
+  <version>4.14.1</version>
+</dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
